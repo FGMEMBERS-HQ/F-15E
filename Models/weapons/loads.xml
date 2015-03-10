@@ -1,0 +1,1010 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+	
+  <!--back-->
+  <!--right -->
+  <!--up -->
+
+ 
+
+  <!--station left 1 -->
+
+
+  <model>
+    <name>left-AIM-9-pos-1</name>
+    <path>Aircraft/F-15E/Models/weapons/AIM9.xml</path>
+    <offsets>
+      <x-m>  2.05 </x-m>
+      <y-m> -2.8</y-m>
+      <z-m>  -0.08</z-m>
+      <pitch-deg> 0.0 </pitch-deg>
+    </offsets>
+  </model>	
+
+  <animation>
+    <type>select</type>
+    <object-name>left-AIM-9-pos-1</object-name>      
+    <condition>
+      <and>
+        <equals>
+          <property>sim/weight[0]/selected</property>
+          <value>AIM-9 Sidewinder</value>
+        </equals>
+        <equals>
+          <property>controls/armament/station[0]/release</property>
+          <value>false</value>
+        </equals>
+      </and>
+    </condition>
+	  <attach>world</attach>
+
+  <placer>
+   <type>point</type>
+  </placer>
+  </animation>
+
+
+  <!-- station left 2 -->
+
+
+ <model>
+    <name>left-drop-tank</name>
+    <path>Aircraft/F-15E/Models/weapons/tank2000.xml</path>
+    <offsets>
+      <x-m>  0</x-m>
+      <y-m> 0</y-m>
+      <z-m>  0</z-m>
+      <pitch-deg> 0.0 </pitch-deg>
+    </offsets>
+  </model>	
+
+  <animation>
+    <type>select</type>
+    <object-name>left-drop-tank</object-name>      
+    <condition>
+      <and>
+        <equals>
+          <property>sim/weight[1]/selected</property>
+          <value>2000 l Droptank</value>
+        </equals>
+        <equals>
+          <property>controls/armament/station[1]/release</property>
+          <value>false</value>
+        </equals>
+      </and>
+    </condition>
+	  <attach>world</attach>
+
+  <placer>
+   <type>point</type>
+  </placer>
+  </animation>
+
+
+ 
+  <!-- station left 3 -->
+
+  <model>
+    <name>left-AIM-9-pos-2</name>
+    <path>Aircraft/F-15E/Models/weapons/AIM9.xml</path>
+    <offsets>
+      <x-m>  2.05 </x-m>
+      <y-m> -2.2</y-m>
+      <z-m>  -0.08</z-m>
+      <pitch-deg> 0.0 </pitch-deg>
+
+    </offsets>
+  </model>	
+
+  <animation>
+    <type>select</type>
+    <object-name>left-AIM-9-pos-2</object-name>      
+    <condition>
+      <and>
+        <equals>
+          <property>sim/weight[2]/selected</property>
+          <value>AIM-9 Sidewinder</value>
+        </equals>
+        <equals>
+          <property>controls/armament/station[2]/release</property>
+          <value>false</value>
+        </equals>
+      </and>
+    </condition>
+	  <attach>world</attach>
+
+  <placer>
+   <type>point</type>
+  </placer>
+  </animation>
+
+
+<!-- station left 4 -->
+
+  <model>
+    <name>left-MK82-pos-1</name>
+    <path>Aircraft/F-15E/Models/weapons/single-MK-82-LD.xml</path>
+    <offsets>
+      <x-m>0.0</x-m>
+      <y-m>-1.81</y-m>
+      <z-m>-0.75</z-m>
+      <pitch-deg> 0.0 </pitch-deg>
+
+    </offsets>
+  </model>	
+
+  <animation>
+    <type>select</type>
+    <object-name>left-MK82-pos-1</object-name>      
+    <condition>
+      <and>
+        <equals>
+          <property>sim/weight[3]/selected</property>
+          <value>MK-82</value>
+        </equals>
+        <equals>
+          <property>controls/armament/station[3]/release</property>
+          <value>false</value>
+        </equals>
+      </and>
+    </condition>
+	  <attach>world</attach>
+
+  <placer>
+   <type>point</type>
+  </placer>
+  </animation> 
+
+<model>
+    <name>left-GBU12-pos-1</name>
+    <path>Aircraft/F-15E/Models/weapons/gbu12.xml</path>
+    <offsets>
+      <x-m>0.0</x-m>
+      <y-m>-1.81</y-m>
+      <z-m>-0.75</z-m>
+      <pitch-deg> 0.0 </pitch-deg>
+
+    </offsets>
+  </model>	
+
+  <animation>
+    <type>select</type>
+    <object-name>left-GBU12-pos-1</object-name>      
+    <condition>
+      <and>
+        <equals>
+          <property>sim/weight[3]/selected</property>
+          <value>GBU-12</value>
+        </equals>
+        <equals>
+          <property>controls/armament/station[3]/release</property>
+          <value>false</value>
+        </equals>
+      </and>
+    </condition>
+	  <attach>world</attach>
+
+  <placer>
+   <type>point</type>
+  </placer>
+  </animation>
+
+
+<!-- station left 5 -->
+
+  <model>
+    <name>left-MK82-pos-2</name>
+    <path>Aircraft/F-15E/Models/weapons/single-MK-82-LD.xml</path>
+    <offsets>
+     <x-m>2.3</x-m>
+      <y-m>-1.81</y-m>
+      <z-m>-0.75</z-m>
+      <pitch-deg> 0.0 </pitch-deg>
+    </offsets>
+  </model>	
+
+  <animation>
+    <type>select</type>
+    <object-name>left-MK82-pos-2</object-name>      
+    <condition>
+      <and>
+        <equals>
+          <property>sim/weight[4]/selected</property>
+          <value>MK-82</value>
+        </equals>
+        <equals>
+          <property>controls/armament/station[4]/release</property>
+          <value>false</value>
+        </equals>
+      </and>
+    </condition>
+	  <attach>world</attach>
+
+  <placer>
+   <type>point</type>
+  </placer>
+  </animation>
+
+
+<!-- station left 6 -->
+
+  <model>
+    <name>left-MK82-pos-3</name>
+    <path>Aircraft/F-15E/Models/weapons/single-MK-82-LD.xml</path>
+    <offsets>
+     <x-m>4.4</x-m>
+      <y-m>-1.8</y-m>
+      <z-m>-0.74</z-m>
+      <pitch-deg> -10.0 </pitch-deg>
+    </offsets>
+  </model>	
+
+  <animation>
+    <type>select</type>
+    <object-name>left-MK82-pos-3</object-name>      
+    <condition>
+      <and>
+        <equals>
+          <property>sim/weight[5]/selected</property>
+          <value>MK-82</value>
+        </equals>
+        <equals>
+          <property>controls/armament/station[5]/release</property>
+          <value>false</value>
+        </equals>
+      </and>
+    </condition>
+	  <attach>world</attach>
+
+  <placer>
+   <type>point</type>
+  </placer>
+  </animation> 
+
+<model>
+    <name>left-GBU12-pos-2</name>
+    <path>Aircraft/F-15E/Models/weapons/gbu12.xml</path>
+    <offsets>
+     <x-m>4.4</x-m>
+      <y-m>-1.8</y-m>
+      <z-m>-0.74</z-m>
+      <pitch-deg> -10.0 </pitch-deg>
+    </offsets>
+  </model>	
+
+  <animation>
+    <type>select</type>
+    <object-name>left-GBU12-pos-2</object-name>      
+    <condition>
+      <and>
+        <equals>
+          <property>sim/weight[5]/selected</property>
+          <value>GBU-12</value>
+        </equals>
+        <equals>
+          <property>controls/armament/station[5]/release</property>
+          <value>false</value>
+        </equals>
+      </and>
+    </condition>
+	  <attach>world</attach>
+
+  <placer>
+   <type>point</type>
+  </placer>
+  </animation>
+
+
+
+<!-- Station Left 7 -->
+
+<model>
+    <name>left-AIM-120-pos-1</name>
+    <path>Aircraft/F-15E/Models/weapons/2xAIM120.xml</path>
+    <offsets>
+      <x-m>  0.0 </x-m>
+      <y-m> -0.0</y-m>
+      <z-m>  0.1</z-m>
+      <pitch-deg> 0.0 </pitch-deg>
+    </offsets>
+  </model>	
+
+  <animation>
+    <type>select</type>
+    <object-name>left-AIM-120-pos-1</object-name>      
+    <condition>
+      <and>
+        <equals>
+          <property>sim/weight[6]/selected</property>
+          <value>2xAIM120</value>
+        </equals>
+        <equals>
+          <property>controls/armament/station[6]/release</property>
+          <value>false</value>
+        </equals>
+      </and>
+    </condition>
+	  <attach>world</attach>
+
+  <placer>
+   <type>point</type>
+  </placer>
+  </animation> 
+
+ <model>
+    <name>left-GBU12-pos-3</name>
+    <path>Aircraft/F-15E/Models/weapons/gbu12.xml</path>
+    <offsets>
+      <x-m>  -0.5 </x-m>
+      <y-m> -1.55</y-m>
+      <z-m>  -1.12</z-m>
+      <pitch-deg> 0.0 </pitch-deg>
+    </offsets>
+  </model>	
+
+  <animation>
+    <type>select</type>
+    <object-name>left-GBU12-pos-3</object-name>      
+    <condition>
+      <and>
+        <equals>
+          <property>sim/weight[6]/selected</property>
+          <value>GBU-12</value>
+        </equals>
+        <equals>
+          <property>controls/armament/station[6]/release</property>
+          <value>false</value>
+        </equals>
+      </and>
+    </condition>
+	  <attach>world</attach>
+
+  <placer>
+   <type>point</type>
+  </placer>
+  </animation> 
+
+<model>
+    <name>left-GBU12-pos-4</name>
+    <path>Aircraft/F-15E/Models/weapons/2xgbu12.xml</path>
+    <offsets>
+      <x-m>  0</x-m>
+      <y-m> -1.55</y-m>
+      <z-m>  -1.0</z-m>
+      <pitch-deg> 0.0 </pitch-deg>
+<roll-deg>45.0</roll-deg>
+    </offsets>
+  </model>	
+
+  <animation>
+    <type>select</type>
+    <object-name>left-GBU12-pos-4</object-name>      
+    <condition>
+      <and>
+        <equals>
+          <property>sim/weight[6]/selected</property>
+          <value>2xGBU-12</value>
+        </equals>
+        <equals>
+          <property>controls/armament/station[6]/release</property>
+          <value>false</value>
+        </equals>
+      </and>
+    </condition>
+	  <attach>world</attach>
+
+  <placer>
+   <type>point</type>
+  </placer>
+  </animation>  
+
+
+<model>
+    <name>left-GBU24-pos-1</name>
+    <path>Aircraft/F-15E/Models/weapons/gbu24.xml</path>
+    <offsets>
+      <x-m>  1.5</x-m>
+      <y-m> -1.61</y-m>
+      <z-m>  -1.0</z-m>
+      <pitch-deg> 0.0 </pitch-deg>
+<roll-deg>0</roll-deg>
+    </offsets>
+  </model>	
+
+  <animation>
+    <type>select</type>
+    <object-name>left-GBU24-pos-1</object-name>      
+    <condition>
+      <and>
+        <equals>
+          <property>sim/weight[6]/selected</property>
+          <value>GBU-24</value>
+        </equals>
+        <equals>
+          <property>controls/armament/station[6]/release</property>
+          <value>false</value>
+        </equals>
+      </and>
+    </condition>
+	  <attach>world</attach>
+
+  <placer>
+   <type>point</type>
+  </placer>
+  </animation>
+
+
+
+
+
+<!-- Station Left 8 -->
+
+<model>
+    <name>LANTIRN_Targeting_ Pod</name>
+    <path>Aircraft/F-15E/Models/weapons/an-aaq14.xml</path>
+    <offsets>
+      <x-m>  0.0 </x-m>
+      <y-m> -0.0</y-m>
+      <z-m>  0.1</z-m>
+      <pitch-deg> 0.0 </pitch-deg>
+    </offsets>
+  </model>	
+
+  <animation>
+    <type>select</type>
+    <object-name>LANTIRN_Targeting_ Pod</object-name>      
+    <condition>
+      <and>
+        <equals>
+          <property>sim/weight[7]/selected</property>
+          <value>LANTIRN_Targeting_ Pod</value>
+        </equals>
+        <equals>
+          <property>controls/armament/station[7]/release</property>
+          <value>false</value>
+        </equals>
+      </and>
+    </condition>
+	  <attach>world</attach>
+
+  <placer>
+   <type>point</type>
+  </placer>
+  </animation>
+
+
+
+  <!-- center station -->
+
+ <model>
+    <name>Centre-drop-tank</name>
+    <path>Aircraft/F-15E/Models/weapons/tank2000.xml</path>
+    <offsets>
+      <x-m> -1.50</x-m>
+      <y-m> 2.45</y-m>
+      <z-m>  -0.59</z-m>
+      <pitch-deg> 0.0 </pitch-deg>
+    </offsets>
+  </model>	
+
+  <animation>
+    <type>select</type>
+    <object-name>Centre-drop-tank</object-name>      
+    <condition>
+      <and>
+        <equals>
+          <property>sim/weight[8]/selected</property>
+          <value>2000 l Droptank</value>
+        </equals>
+        <equals>
+          <property>controls/armament/station[8]/release</property>
+          <value>false</value>
+        </equals>
+      </and>
+    </condition>
+	  <attach>world</attach>
+
+  <placer>
+   <type>point</type>
+  </placer>
+  </animation> 
+
+<model>
+    <name>an-zsw-1_DLP</name>
+    <path>Aircraft/F-15E/Models/weapons/an-zsw-1.xml</path>
+    <offsets>
+      <x-m> 0</x-m>
+      <y-m> 0.06</y-m>
+      <z-m>  2.2</z-m>
+      <pitch-deg> 0.0 </pitch-deg>
+    </offsets>
+  </model>	
+
+  <animation>
+    <type>select</type>
+    <object-name>an-zsw-1_DLP</object-name>      
+    <condition>
+      <and>
+        <equals>
+          <property>sim/weight[8]/selected</property>
+          <value>an-zsw-1_DLP</value>
+        </equals>
+        <equals>
+          <property>controls/armament/station[8]/release</property>
+          <value>false</value>
+        </equals>
+      </and>
+    </condition>
+	  <attach>world</attach>
+
+  <placer>
+   <type>point</type>
+  </placer>
+  </animation>
+
+<!-- Station Right 8 -->
+
+<model>
+    <name>LANTIRN_Navigation_ Pod</name>
+    <path>Aircraft/F-15E/Models/weapons/an-aaq13.xml</path>
+    <offsets>
+      <x-m>  0.0 </x-m>
+      <y-m> -0.0</y-m>
+      <z-m>  0.1</z-m>
+      <pitch-deg> 0.0 </pitch-deg>
+    </offsets>
+  </model>	
+
+  <animation>
+    <type>select</type>
+    <object-name>LANTIRN_Navigation_ Pod</object-name>      
+    <condition>
+      <and>
+        <equals>
+          <property>sim/weight[9]/selected</property>
+          <value>LANTIRN_Navigation_ Pod</value>
+        </equals>
+        <equals>
+          <property>controls/armament/station[9]/release</property>
+          <value>false</value>
+        </equals>
+      </and>
+    </condition>
+	  <attach>world</attach>
+
+  <placer>
+   <type>point</type>
+  </placer>
+  </animation>
+
+
+
+<!-- Station Right 7 -->
+  <model>
+    <name>right-AIM-120-pos-1</name>
+    <path>Aircraft/F-15E/Models/weapons/2xAIM120.xml</path>
+    <offsets>
+      <x-m>  0</x-m>
+      <y-m> 3.06</y-m>
+      <z-m>  0.1</z-m>
+      <pitch-deg> 0.0 </pitch-deg>
+    </offsets>
+  </model>	
+
+  <animation>
+    <type>select</type>
+    <object-name>right-AIM-120-pos-1</object-name>      
+    <condition>
+      <and>
+        <equals>
+          <property>sim/weight[10]/selected</property>
+          <value>2xAIM120</value>
+        </equals>
+        <equals>
+          <property>controls/armament/station[10]/release</property>
+          <value>false</value>
+        </equals>
+      </and>
+    </condition>
+	  <attach>world</attach>
+
+  <placer>
+   <type>point</type>
+  </placer>
+  </animation> 
+
+
+ <model>
+    <name>right-GBU12-pos-3</name>
+    <path>Aircraft/F-15E/Models/weapons/gbu12.xml</path>
+    <offsets>
+      <x-m>  -0.5 </x-m>
+      <y-m> 1.49</y-m>
+      <z-m>  -1.12</z-m>
+      <pitch-deg> 0.0 </pitch-deg>
+    </offsets>
+  </model>	
+
+  <animation>
+    <type>select</type>
+    <object-name>right-GBU12-pos-3</object-name>      
+    <condition>
+      <and>
+        <equals>
+          <property>sim/weight[10]/selected</property>
+          <value>GBU-12</value>
+        </equals>
+        <equals>
+          <property>controls/armament/station[10]/release</property>
+          <value>false</value>
+        </equals>
+      </and>
+    </condition>
+	  <attach>world</attach>
+
+  <placer>
+   <type>point</type>
+  </placer>
+  </animation> 
+
+<model>
+    <name>right-GBU12-pos-4</name>
+    <path>Aircraft/F-15E/Models/weapons/2xgbu12.xml</path>
+    <offsets>
+      <x-m>  0</x-m>
+      <y-m> 1.49</y-m>
+      <z-m>  -1.0</z-m>
+      <pitch-deg> 0.0 </pitch-deg>
+<roll-deg>45.0</roll-deg>
+    </offsets>
+  </model>	
+
+  <animation>
+    <type>select</type>
+    <object-name>right-GBU12-pos-4</object-name>      
+    <condition>
+      <and>
+        <equals>
+          <property>sim/weight[10]/selected</property>
+          <value>2xGBU-12</value>
+        </equals>
+        <equals>
+          <property>controls/armament/station[10]/release</property>
+          <value>false</value>
+        </equals>
+      </and>
+    </condition>
+	  <attach>world</attach>
+
+  <placer>
+   <type>point</type>
+  </placer>
+  </animation>  
+
+<model>
+    <name>right-GBU24-pos-1</name>
+    <path>Aircraft/F-15E/Models/weapons/gbu24.xml</path>
+    <offsets>
+      <x-m>  1.5</x-m>
+      <y-m> 1.49</y-m>
+      <z-m>  -1.0</z-m>
+      <pitch-deg> 0.0 </pitch-deg>
+<roll-deg>0</roll-deg>
+    </offsets>
+  </model>	
+
+  <animation>
+    <type>select</type>
+    <object-name>right-GBU24-pos-1</object-name>      
+    <condition>
+      <and>
+        <equals>
+          <property>sim/weight[10]/selected</property>
+          <value>GBU-24</value>
+        </equals>
+        <equals>
+          <property>controls/armament/station[10]/release</property>
+          <value>false</value>
+        </equals>
+      </and>
+    </condition>
+	  <attach>world</attach>
+
+  <placer>
+   <type>point</type>
+  </placer>
+  </animation>
+
+
+
+
+<!-- station right 6 -->
+
+  <model>
+    <name>right-MK82-pos-3</name>
+    <path>Aircraft/F-15E/Models/weapons/single-MK-82-LD.xml</path>
+    <offsets>
+     <x-m>4.4</x-m>
+      <y-m>1.74</y-m>
+      <z-m>-0.74</z-m>
+      <pitch-deg> -10.0 </pitch-deg>
+    </offsets>
+  </model>	
+
+  <animation>
+    <type>select</type>
+    <object-name>right-MK82-pos-3</object-name>      
+    <condition>
+      <and>
+        <equals>
+          <property>sim/weight[11]/selected</property>
+          <value>MK-82</value>
+        </equals>
+        <equals>
+          <property>controls/armament/station[11]/release</property>
+          <value>false</value>
+        </equals>
+      </and>
+    </condition>
+	  <attach>world</attach>
+
+  <placer>
+   <type>point</type>
+  </placer>
+  </animation>
+
+<model>
+    <name>right-GBU12-pos-2</name>
+    <path>Aircraft/F-15E/Models/weapons/gbu12.xml</path>
+    <offsets>
+     <x-m>4.4</x-m>
+      <y-m>1.74</y-m>
+      <z-m>-0.74</z-m>
+      <pitch-deg> -10.0 </pitch-deg>
+    </offsets>
+  </model>	
+
+  <animation>
+    <type>select</type>
+    <object-name>right-GBU12-pos-2</object-name>      
+    <condition>
+      <and>
+        <equals>
+          <property>sim/weight[11]/selected</property>
+          <value>GBU-12</value>
+        </equals>
+        <equals>
+          <property>controls/armament/station[11]/release</property>
+          <value>false</value>
+        </equals>
+      </and>
+    </condition>
+	  <attach>world</attach>
+
+  <placer>
+   <type>point</type>
+  </placer>
+  </animation>
+
+  
+<!-- station right 5 -->
+
+  <model>
+    <name>right-MK82-pos-2</name>
+    <path>Aircraft/F-15E/Models/weapons/single-MK-82-LD.xml</path>
+    <offsets>
+     <x-m>2.3</x-m>
+      <y-m>1.75</y-m>
+      <z-m>-0.75</z-m>
+      <pitch-deg> 0.0 </pitch-deg>
+    </offsets>
+  </model>	
+
+  <animation>
+    <type>select</type>
+    <object-name>right-MK82-pos-2</object-name>      
+    <condition>
+      <and>
+        <equals>
+          <property>sim/weight[12]/selected</property>
+          <value>MK-82</value>
+        </equals>
+        <equals>
+          <property>controls/armament/station[12]/release</property>
+          <value>false</value>
+        </equals>
+      </and>
+    </condition>
+	  <attach>world</attach>
+
+  <placer>
+   <type>point</type>
+  </placer>
+  </animation>
+
+
+<!-- station left 4 -->
+
+  <model>
+    <name>right-MK82-pos-1</name>
+    <path>Aircraft/F-15E/Models/weapons/single-MK-82-LD.xml</path>
+    <offsets>
+      <x-m>0.0</x-m>
+      <y-m>1.75</y-m>
+      <z-m>-0.75</z-m>
+      <pitch-deg> 0.0 </pitch-deg>
+
+    </offsets>
+  </model>	
+
+  <animation>
+    <type>select</type>
+    <object-name>right-MK82-pos-1</object-name>      
+    <condition>
+      <and>
+        <equals>
+          <property>sim/weight[13]/selected</property>
+          <value>MK-82</value>
+        </equals>
+        <equals>
+          <property>controls/armament/station[13]/release</property>
+          <value>false</value>
+        </equals>
+      </and>
+    </condition>
+	  <attach>world</attach>
+
+  <placer>
+   <type>point</type>
+  </placer>
+  </animation>
+
+
+<model>
+    <name>right-GBU12-pos-1</name>
+    <path>Aircraft/F-15E/Models/weapons/gbu12.xml</path>
+    <offsets>
+      <x-m>0.0</x-m>
+      <y-m>1.75</y-m>
+      <z-m>-0.75</z-m>
+      <pitch-deg> 0.0 </pitch-deg>
+
+    </offsets>
+  </model>	
+
+  <animation>
+    <type>select</type>
+    <object-name>right-GBU12-pos-1</object-name>      
+    <condition>
+      <and>
+        <equals>
+          <property>sim/weight[13]/selected</property>
+          <value>GBU-12</value>
+        </equals>
+        <equals>
+          <property>controls/armament/station[13]/release</property>
+          <value>false</value>
+        </equals>
+      </and>
+    </condition>
+	  <attach>world</attach>
+
+  <placer>
+   <type>point</type>
+  </placer>
+  </animation>
+
+  <!-- station right 3 -->
+<model>
+    <name>right-AIM-9-pos-2</name>
+    <path>Aircraft/F-15E/Models/weapons/AIM9.xml</path>
+    <offsets>
+      <x-m>  2.05 </x-m>
+      <y-m> 2.14</y-m>
+      <z-m>  -0.08</z-m>
+      <pitch-deg> 0.0 </pitch-deg>
+
+    </offsets>
+  </model>	
+
+  <animation>
+    <type>select</type>
+    <object-name>right-AIM-9-pos-2</object-name>      
+    <condition>
+      <and>
+        <equals>
+          <property>sim/weight[14]/selected</property>
+          <value>AIM-9 Sidewinder</value>
+        </equals>
+        <equals>
+          <property>controls/armament/station[14]/release</property>
+          <value>false</value>
+        </equals>
+      </and>
+    </condition>
+	  <attach>world</attach>
+
+  <placer>
+   <type>point</type>
+  </placer>
+  </animation>
+
+  <!--station right 2 -->
+  
+<model>
+    <name>right-drop-tank</name>
+    <path>Aircraft/F-15E/Models/weapons/tank2000.xml</path>
+    <offsets>
+      <x-m>  0</x-m>
+      <y-m> 4.9</y-m>
+      <z-m>  0</z-m>
+      <pitch-deg> 0.0 </pitch-deg>
+    </offsets>
+  </model>	
+
+  <animation>
+    <type>select</type>
+    <object-name>right-drop-tank</object-name>      
+    <condition>
+      <and>
+        <equals>
+          <property>sim/weight[15]/selected</property>
+          <value>2000 l Droptank</value>
+        </equals>
+        <equals>
+          <property>controls/armament/station[15]/release</property>
+          <value>false</value>
+        </equals>
+      </and>
+    </condition>
+	  <attach>world</attach>
+
+  <placer>
+   <type>point</type>
+  </placer>
+  </animation>
+
+
+  <!--station right 1 -->
+  
+<model>
+    <name>right-AIM-9-pos-1</name>
+    <path>Aircraft/F-15E/Models/weapons/AIM9.xml</path>
+    <offsets>
+      <x-m>  2.05 </x-m>
+      <y-m> 2.74</y-m>
+      <z-m>  -0.08</z-m>
+      <pitch-deg> 0.0 </pitch-deg>
+    </offsets>
+  </model>	
+
+  <animation>
+    <type>select</type>
+    <object-name>right-AIM-9-pos-1</object-name>      
+    <condition>
+      <and>
+        <equals>
+          <property>sim/weight[16]/selected</property>
+          <value>AIM-9 Sidewinder</value>
+        </equals>
+        <equals>
+          <property>controls/armament/station[16]/release</property>
+          <value>false</value>
+        </equals>
+      </and>
+    </condition>
+	  <attach>world</attach>
+
+  <placer>
+   <type>point</type>
+  </placer>
+  </animation>
+
+
+
+
+
+</PropertyList>
+
+

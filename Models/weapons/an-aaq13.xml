@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>an-aaq13.ac</path>
+
+  <animation>
+    <object-name>an-aaq13</object-name>
+  </animation>
+<animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>dome</object-name>
+      <attach>world</attach>
+
+  <placer>
+   <type>point</type>
+  </placer>
+  </animation>
+
+
+</PropertyList>

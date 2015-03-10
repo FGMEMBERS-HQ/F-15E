@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+
+<animation>
+    <type>rotate</type>
+    <object-name>Canopy</object-name>
+    <property>instrumentation/doors/crew/position-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep>  0 </dep></entry>
+      <entry><ind> 1 </ind><dep> 60 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> -2.148 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.642 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+
+<animation>
+    <type>rotate</type>
+    <object-name>CanopyGlass</object-name>
+    <property>instrumentation/doors/crew/position-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep>  0 </dep></entry>
+      <entry><ind> 1 </ind><dep> 60 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> -2.148 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.642 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+<animation>
+    <type>rotate</type>
+    <object-name>grabBar</object-name>
+    <property>instrumentation/doors/crew/position-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep>  0 </dep></entry>
+      <entry><ind> 1 </ind><dep> 60 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> -2.148 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.642 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>interior</object-name>
+    <object-name>inttour</object-name>
+
+    <!-- Objets transparents -->
+    <object-name>intverriere</object-name>
+    <object-name>intvitres</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>CanopyGlass</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>intverriere</object-name>
+    <object-name>intvitres</object-name>
+  </animation>
+
+  
+  <!-- pilots -->
+<model>
+    <path>Aircraft/F-15E/Models/Interior/pilot/pilot.ac</path>
+    <offsets>
+      <x-m> 0 </x-m>
+      <y-m> -0.1 </y-m>
+      <z-m> -0.6 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/F-15E/Models/Interior/pilot/pilot1.ac</path>
+    <offsets>
+      <x-m> -0.1 </x-m>
+      <y-m> -0.1 </y-m>
+      <z-m> -0.62 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Pilot invisible from internally -->
+
+    <animation>
+        <type>select</type>
+        <object-name>pilot</object-name>
+		<condition>
+<not>
+            <property>sim/current-view/internal</property>
+</not>
+        </condition>
+    </animation>		
+  
+  
+  <!-- Dash-->
+ 
+<model>
+    <path>Aircraft/F-15E/Models/Interior/interior.ac</path>
+    <offsets>
+      <x-m> 0 </x-m>
+      <y-m> -0.0 </y-m>
+      <z-m> 0.006 </z-m>
+    </offsets>
+  </model>
+
+<!-- Sticks & pedals-->
+<!-- FRONT -->
+ <model>
+    <path>Aircraft/F-15E/Models/Interior/Panel/Instruments/divers/stick.xml</path>
+    <offsets>
+      <x-m> -4.5 </x-m>
+      <y-m> -0.06 </y-m>
+      <z-m> 0.1</z-m>
+      <pitch-deg>-0</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/F-15E/Models/Interior/Panel/Instruments/divers/pedals.xml</path>
+    <offsets>
+      <x-m> -4.7</x-m>
+      <y-m> -0.06</y-m>
+      <z-m> 0</z-m>
+      <pitch-deg>-0</pitch-deg>
+    </offsets>
+  </model>
+
+<model>
+<path>Aircraft/F-15E/Models/Interior/Panel/Instruments/throttle/A-10-throttle.xml</path>
+<offsets>
+<x-m> -4.188</x-m>
+<y-m> -0.385</y-m>
+<z-m> 0.3389 </z-m>
+<pitch-deg>0</pitch-deg>
+</offsets>
+</model>
+
+<model>
+<path>Aircraft/F-15E/Models/Interior/Panel/Instruments/fuelcontrol/A-10-fuel-control.xml</path>
+<offsets>
+<x-m> -4.36</x-m>
+<y-m> -0.388</y-m>
+<z-m> 0.333 </z-m>
+<pitch-deg>0</pitch-deg>
+</offsets>
+</model>
+
+
+
+
+<!-- Sticks & pedals-->
+<!-- REAR -->
+ <model>
+    <path>Aircraft/F-15E/Models/Interior/Panel/Instruments/divers/stick.xml</path>
+    <offsets>
+      <x-m> -3.3 </x-m>
+      <y-m> -0.02 </y-m>
+      <z-m> 0.</z-m>
+      <pitch-deg>-0</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/F-15E/Models/Interior/Panel/Instruments/divers/pedals.xml</path>
+    <offsets>
+      <x-m> -3.5</x-m>
+      <y-m> -0.02</y-m>
+      <z-m> 0</z-m>
+      <pitch-deg>-0</pitch-deg>
+    </offsets>
+  </model>
+
+
+<model>
+<path>Aircraft/F-15E/Models/Interior/Panel/Instruments/throttle/A-10-throttle.xml</path>
+<offsets>
+<x-m> -2.9</x-m>
+<y-m> -0.33</y-m>
+<z-m> 0.31 </z-m>
+<pitch-deg>0</pitch-deg>
+</offsets>
+</model>
+
+<model>
+<path>Aircraft/F-15E/Models/Interior/Panel/Instruments/fuelcontrol/A-10-fuel-control.xml</path>
+<offsets>
+<x-m> -3.07</x-m>
+<y-m> -0.335</y-m>
+<z-m> 0.307 </z-m>
+<pitch-deg>0</pitch-deg>
+</offsets>
+</model>
+
+
+
+ 
+
+<!-- Instruments -->
+<!-- Front main dash --> 
+<model>
+<path>Aircraft/F-15E/Models/Interior/Panel/Instruments/mfd/MFD/mfd1.xml</path>
+<offsets>
+<x-m> -4.55</x-m>
+<y-m> -0.21</y-m>
+<z-m> 0.742 </z-m>
+<pitch-deg>0</pitch-deg>
+</offsets>
+</model>
+
+<model>
+<path>Aircraft/F-15E/Models/Interior/Panel/Instruments/mfd/MFD/mfd2.xml</path>
+<offsets>
+<x-m> -4.56</x-m>
+<y-m> -0.06</y-m>
+<z-m> 0.57 </z-m>
+<pitch-deg>0</pitch-deg>
+</offsets>
+</model>
+
+
+
+<model>
+<path>Aircraft/F-15E/Models/Interior/Panel/Instruments/mfd/MFD/mfd3.xml</path>
+<offsets>
+<x-m> -4.56</x-m>
+<y-m> 0.1</y-m>
+<z-m> 0.742 </z-m>
+<pitch-deg>0</pitch-deg>
+</offsets>
+</model>
+
+
+<model>
+<path>Aircraft/F-15E/Models/Interior/Panel/Instruments/HUD/A-10-hud-panel.xml</path>
+<offsets>
+<x-m> -4.54</x-m>
+<y-m> -0.35</y-m>
+<z-m> 0.7 </z-m>
+<pitch-deg>0</pitch-deg>
+</offsets>
+</model>
+
+
+<model>
+<path>Aircraft/Instruments-3d/altimeter/altimeter.xml</path>
+<offsets>
+<x-m> -4.545</x-m>
+<y-m> -0.178</y-m>
+<z-m> 0.61 </z-m>
+<pitch-deg>0</pitch-deg>
+</offsets>
+</model>
+
+
+<model>
+<path>Aircraft/F-15E/Models/Interior/Panel/Instruments/asi/airspeed.xml</path>
+<offsets>
+<x-m> -4.55</x-m>
+<y-m> -0.33</y-m>
+<z-m> 0.615 </z-m>
+<pitch-deg>0</pitch-deg>
+</offsets>
+</model>
+
+<model>
+<path>Aircraft/F-15E/Models/Interior/Panel/Instruments/AI/AI.xml</path>
+<offsets>
+<x-m> -4.545</x-m>
+<y-m> -0.255</y-m>
+<z-m> 0.613 </z-m>
+<pitch-deg>0</pitch-deg>
+</offsets>
+</model>
+
+
+<model>
+<path>Aircraft/Instruments-3d/vsi-6/vsi-3d.xml</path>
+<offsets>
+<x-m> -4.545</x-m>
+<y-m> -0.255</y-m>
+<z-m> 0.53 </z-m>
+<pitch-deg>0</pitch-deg>
+</offsets>
+</model>
+
+<model>
+<path>Aircraft/F-15E/Models/Interior/Panel/Instruments/AoA/aoa-gauge.xml</path>
+<offsets>
+<x-m> -4.545</x-m>
+<y-m> -0.329</y-m>
+<z-m> 0.533 </z-m>
+<pitch-deg>0</pitch-deg>
+</offsets>
+</model>
+
+
+<model>
+<path>Aircraft/F-15E/Models/Interior/Panel/Instruments/clock/clock.xml</path>
+<offsets>
+<x-m> -4.552</x-m>
+<y-m> 0.057</y-m>
+<z-m> 0.61 </z-m>
+<pitch-deg>0</pitch-deg>
+</offsets>
+</model>
+
+<model>
+<path>Aircraft/Instruments-3d/alt/alt.xml</path>
+<offsets>
+<x-m> -4.547</x-m>
+<y-m> 0.06</y-m>
+<z-m> 0.53</z-m>
+<pitch-deg>0</pitch-deg>
+</offsets>
+</model>
+
+
+
+<model>
+<path>Aircraft/F-15E/Models/Interior/Panel/Instruments/Fuelflow/fuel-gauges.xml</path>
+<offsets>
+<x-m> -4.551</x-m>
+<y-m> 0.26</y-m>
+<z-m> 0.59 </z-m>
+<pitch-deg>0</pitch-deg>
+</offsets>
+</model>
+
+<!-- Front Right -->
+
+<model>
+<path>Aircraft/F-15E/Models/Interior/Panel/Instruments/radio/A-10-an-arc-186-1.xml</path>
+<offsets>
+<x-m> -4.537</x-m>
+<y-m> 0.288</y-m>
+<z-m> 0.439 </z-m>
+<pitch-deg>52</pitch-deg>
+</offsets>
+</model>
+
+<model>
+<path>Aircraft/F-15E/Models/Interior/Panel/Instruments/ils/A-10-ils.xml</path>
+<offsets>
+<x-m> -4.505</x-m>
+<y-m> 0.28</y-m>
+<z-m> 0.404 </z-m>
+<pitch-deg>52</pitch-deg>
+</offsets>
+</model>
+
+<model>
+<path>Aircraft/F-15E/Models/Interior/Panel/Instruments/tacan/tacan.xml</path>
+<offsets>
+<x-m> -4.47</x-m>
+<y-m> 0.288</y-m>
+<z-m> 0.365 </z-m>
+<pitch-deg>52</pitch-deg>
+</offsets>
+</model>
+
+
+<model>
+<path>Aircraft/F-15E/Models/Interior/Panel/Instruments/lights/light-left-panel.xml</path>
+<offsets>
+<x-m> -4.37</x-m>
+<y-m> 0.286</y-m>
+<z-m> 0.329 </z-m>
+<pitch-deg>-1</pitch-deg>
+</offsets>
+</model>
+
+
+<!-- FRONT LEFT -->
+
+<model>
+<path>Aircraft/F-15E/Models/Interior/Panel/Instruments/sas/A-10-sas.xml</path>
+<offsets>
+<x-m> -4.515</x-m>
+<y-m> -0.38</y-m>
+<z-m> 0.434 </z-m>
+<pitch-deg>52</pitch-deg>
+</offsets>
+</model>
+
+
+
+<!--- REAR COCKPIT -->
+
+<model>
+<path>Aircraft/F-15E/Models/Interior/Panel/Instruments/mfd/MFD/mfd1.xml</path>
+<offsets>
+<x-m> -3.26</x-m>
+<y-m> -0.28</y-m>
+<z-m> 0.703</z-m>
+<pitch-deg>0</pitch-deg>
+</offsets>
+</model>
+
+<model>
+<path>Aircraft/F-15E/Models/Interior/Panel/Instruments/mfd/MFD/mfd2.xml</path>
+<offsets>
+<x-m> -3.26</x-m>
+<y-m> -0.12</y-m>
+<z-m> 0.703 </z-m>
+<pitch-deg>0</pitch-deg>
+</offsets>
+</model>
+
+
+
+<model>
+<path>Aircraft/F-15E/Models/Interior/Panel/Instruments/mfd/MFD/mfd3.xml</path>
+<offsets>
+<x-m> -3.26</x-m>
+<y-m> 0.04</y-m>
+<z-m> 0.703 </z-m>
+<pitch-deg>0</pitch-deg>
+</offsets>
+</model>
+
+<model>
+<path>Aircraft/F-15E/Models/Interior/Panel/Instruments/mfd/MFD/mfd3.xml</path>
+<offsets>
+<x-m> -3.26</x-m>
+<y-m> 0.20</y-m>
+<z-m> 0.703 </z-m>
+<pitch-deg>0</pitch-deg>
+</offsets>
+</model>
+
+<model>
+<path>Aircraft/F-15E/Models/Interior/Panel/Instruments/AI/AI.xml</path>
+<offsets>
+<x-m> -3.25</x-m>
+<y-m> -0.04</y-m>
+<z-m> 0.58 </z-m>
+<pitch-deg>0</pitch-deg>
+</offsets>
+</model>
+
+<model>
+<path>Aircraft/F-15E/Models/Interior/Panel/Instruments/AoA/aoa-gauge.xml</path>
+<offsets>
+<x-m> -3.25</x-m>
+<y-m> -0.115</y-m>
+<z-m> 0.586 </z-m><pitch-deg>0</pitch-deg>
+</offsets>
+</model>
+
+<model>
+<path>Aircraft/F-15E/Models/Interior/Panel/Instruments/asi/airspeed.xml</path>
+<offsets>
+<x-m> -3.25</x-m>
+<y-m> 0.035</y-m>
+<z-m> 0.584 </z-m>
+<pitch-deg>0</pitch-deg>
+</offsets>
+</model>
+
+<model>
+<path>Aircraft/F-15E/Models/Interior/Panel/Instruments/altimeter/altimeter.xml</path>
+<offsets>
+<x-m> -3.22</x-m>
+<y-m> 0.112</y-m>
+<z-m> -0.579 </z-m>
+<pitch-deg>0</pitch-deg>
+</offsets>
+</model>
+
+<model>
+<path>Aircraft/Instruments-3d/vsi-6/vsi-3d.xml</path>
+<offsets>
+<x-m> -3.26</x-m>
+<y-m> 0.193</y-m>
+<z-m> 0.579 </z-m><pitch-deg>0</pitch-deg>
+</offsets>
+</model>
+
+<model>
+<path>Aircraft/F-15E/Models/Interior/Panel/Instruments/clock/clock.xml</path>
+<offsets>
+<x-m> -3.261</x-m>
+<y-m> -0.04</y-m>
+<z-m> 0.50 </z-m>
+<pitch-deg>0</pitch-deg>
+</offsets>
+</model>
+
+<!-- REAR LEFT -->
+
+<model>
+<path>Aircraft/F-15E/Models/Interior/Panel/Instruments/sas/A-10-sas.xml</path>
+<offsets>
+<x-m> -3.2305</x-m>
+<y-m> -0.335</y-m>
+<z-m> 0.406 </z-m>
+<pitch-deg>52</pitch-deg>
+</offsets>
+</model>
+
+<!-- REAR Right -->
+
+<model>
+<path>Aircraft/F-15E/Models/Interior/Panel/Instruments/radio/A-10-an-arc-186-1.xml</path>
+<offsets>
+<x-m> -3.25</x-m>
+<y-m> 0.268</y-m>
+<z-m> 0.424 </z-m>
+<pitch-deg>52</pitch-deg>
+</offsets>
+</model>
+
+<model>
+<path>Aircraft/F-15E/Models/Interior/Panel/Instruments/ils/A-10-ils.xml</path>
+<offsets>
+<x-m> -3.218</x-m>
+<y-m> 0.261</y-m>
+<z-m> 0.385 </z-m>
+<pitch-deg>52</pitch-deg>
+</offsets>
+</model>
+
+<model>
+<path>Aircraft/F-15E/Models/Interior/Panel/Instruments/tacan/tacan.xml</path>
+<offsets>
+<x-m> -3.185</x-m>
+<y-m> 0.267</y-m>
+<z-m> 0.345 </z-m>
+<pitch-deg>52</pitch-deg>
+</offsets>
+</model>
+
+
+<model>
+<path>Aircraft/F-15E/Models/Interior/Panel/Instruments/lights/light-left-panel.xml</path>
+<offsets>
+<x-m> -3.08</x-m>
+<y-m> 0.266</y-m>
+<z-m> 0.305 </z-m>
+<pitch-deg>-1</pitch-deg>
+</offsets>
+</model>
+
+
+
+</PropertyList>
+

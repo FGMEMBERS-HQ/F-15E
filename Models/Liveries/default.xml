@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <sim>
+    <model>
+      <livery>
+        <name type="string">Default</name>
+        <texture>Liveries/F15CNose.png</texture>
+<texture>Liveries/F15CRudder.png</texture>
+<texture>Liveries/F15CSide.png</texture>
+
+      </livery>
+    </model>
+  </sim>
+
+</PropertyList>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>Aircraft/F-15E/Models/weapons/tank1000.ac</path>
+
+  <animation>
+    <object-name>tank1000</object-name>
+	  <attach>world</attach>
+
+  <placer>
+   <type>point</type>
+  </placer>
+  </animation>
+
+</PropertyList>

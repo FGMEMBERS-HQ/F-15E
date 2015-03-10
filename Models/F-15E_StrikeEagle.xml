@@ -1,0 +1,863 @@
+<?xml version="1.0"?>
+
+<PropertyList include="F-15_StrikeEagle-bombableinclude.xml">
+
+ <path>Aircraft/F-15E/Models/f-15E.ac</path>
+
+ 
+ <!-- MP sound call -->
+  <sound><path>Aircraft/F-15C/Sounds/mp-sound.xml</path></sound>
+ 
+ 
+ <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>CanopyGlass</object-name>
+<object-name>FrontGlass</object-name>
+<object-name>FrontGlass.001</object-name>
+
+    
+  </animation>
+<animation>
+    <type>noshadow</type>
+    <object-name>Cockpit</object-name>
+    
+  </animation>
+
+<effect>
+    <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
+    <object-name>Radome</object-name>
+    <object-name>Nose</object-name>
+    <object-name>Fuselage.001</object-name>
+    <object-name>Intake.005</object-name>
+    <object-name>Intake.006</object-name>
+    <object-name>Wing.002</object-name>
+    <object-name>Wing.003</object-name>
+    <object-name>AileronLeft</object-name>
+    <object-name>flaps</object-name>
+    <object-name>AileronRight</object-name>
+    <object-name>ElevatorLeft</object-name>
+    <object-name>ElevatorRight</object-name>
+    <object-name>RefuelDoor</object-name>
+    <object-name>CFT.002</object-name>
+    <object-name>CFT.003</object-name>
+    <object-name>FrontWheel.001</object-name>
+    <object-name>frontdoor</object-name>
+    <object-name>LeftDoor</object-name>
+    <object-name>RightDoor</object-name>
+<object-name>Fin.004</object-name>
+<object-name>RudderLeft</object-name>
+<object-name>Fin.007</object-name>
+<object-name>RudderRight</object-name>
+<object-name>AirBrake</object-name>
+<object-name>Canopy</object-name>
+
+
+    
+  </effect> 
+
+
+
+<!-- Nozzles -->
+  
+  <model>
+   <path>Aircraft/F-15E/Models/Effects/nozzles/Nozzles.xml</path>
+   <offsets>
+     <x-m>-7.57</x-m>
+     <y-m>0.34</y-m>
+     <z-m>0.03</z-m>
+     <pitch-deg>0</pitch-deg>
+   </offsets>
+ </model>
+ 
+ <model>
+   <path>Aircraft/F-15E/Models/Effects/nozzles/Nozzles.xml</path>
+   <offsets>
+     <x-m>-7.57</x-m>
+     <y-m>1.5</y-m>
+     <z-m>0.03</z-m>
+     <pitch-deg>0</pitch-deg>
+   </offsets>
+ </model>
+
+
+
+
+ <animation>
+  <type>select</type>
+  <object-name>FrontWheel.001</object-name>
+  <object-name>FrontWheelTire</object-name>
+  <condition>
+   <greater-than>
+    <property>gear/gear[0]/position-norm</property>
+    <value>0</value>
+   </greater-than>
+  </condition>
+ </animation>
+ 
+ <animation>
+  <type>rotate</type>
+  <object-name>FrontWheel.001</object-name>
+  <object-name>FrontWheelTire</object-name>
+  <property>gear/gear[0]/position-norm</property>
+  <factor>90</factor>
+  <offset-deg>-90</offset-deg>
+  <center>
+   <x-m>-2.5</x-m>
+   <y-m>0.0</y-m>
+   <z-m>-0.1</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>-1</y>
+   <z>0</z>
+  </axis>
+ </animation> 
+ 
+ <animation>
+  <type>select</type>
+  <object-name>RightWheel</object-name>
+  <object-name>RightWheelTire</object-name>
+  <condition>
+   <greater-than>
+    <property>gear/gear[2]/position-norm</property>
+    <value>0</value>
+   </greater-than>
+  </condition>
+ </animation> 
+
+ <animation>
+  <type>rotate</type>
+  <object-name>RightWheel</object-name>
+  <object-name>RightWheelTire</object-name>
+  <property>gear/gear[2]/position-norm</property>
+  <factor>90</factor>
+  <offset-deg>-90</offset-deg>   
+  <center>
+   <x-m>2.0</x-m>
+   <y-m>0.0</y-m>
+   <z-m>-0.1</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>-1</y>
+   <z>0</z>
+  </axis>
+ </animation> 
+
+ <animation>
+  <type>select</type>
+  <object-name>LeftWheel</object-name>
+  <object-name>LeftWheelTire</object-name>
+  <condition>
+   <greater-than>
+    <property>gear/gear[1]/position-norm</property>
+    <value>0</value>
+   </greater-than>
+  </condition>
+ </animation> 
+
+ <animation>
+  <type>rotate</type>
+  <object-name>LeftWheel</object-name>
+  <object-name>LeftWheelTire</object-name>
+  <property>gear/gear[1]/position-norm</property>
+  <factor>90</factor>
+  <offset-deg>-90</offset-deg>   
+  <center>
+   <x-m>2.0</x-m>
+   <y-m>0.0</y-m>
+   <z-m>-0.1</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>-1</y>
+   <z>0</z>
+  </axis>
+ </animation> 
+ 
+ <animation>
+  <type>rotate</type>
+  <object-name>LeftDoor</object-name>
+  <property>gear/gear[0]/position-norm</property>
+  <factor>90</factor>
+  <offset-deg>-90</offset-deg>   
+  <center>
+   <x-m>0.0</x-m>
+   <y-m>-0.77</y-m>
+   <z-m>-0.71</z-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation> 
+ 
+ <animation>
+  <type>rotate</type>
+  <object-name>RightDoor</object-name>
+  <property>gear/gear[0]/position-norm</property>
+  <factor>90</factor>
+  <offset-deg>-90</offset-deg>   
+  <center>
+   <x-m>0.0</x-m>
+   <y-m>0.71</y-m>
+   <z-m>-0.7</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>  
+
+<animation>
+  <type>rotate</type>
+  <object-name>frontdoor</object-name>
+  <property>gear/gear[0]/position-norm</property>
+  <factor>-90</factor>
+  <offset-deg>90</offset-deg>   
+  <center>
+   <x-m>5.5</x-m>
+   <y-m>0.089</y-m>
+   <z-m>-0.465</z-m>
+  </center>
+  <axis>
+   <x>-0.01</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>  
+
+
+
+ <animation>
+  <type>select</type>
+  <object-name>ExternalFlame</object-name>
+  <condition>
+   <equals>
+    <property>engines/engine[0]/augmentation</property>
+    <value>true</value>
+   </equals>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>ElevatorLeft</object-name>
+  <object-name>ElevatorRight</object-name>  
+  <property>surface-positions/elevator-pos-norm</property>
+  <factor>25</factor>
+  <center>
+   <x-m>6.5</x-m>
+   <y-m>0</y-m>
+   <z-m>0</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>AirBrake</object-name>
+  <property>surface-positions/speedbrake-pos-norm</property>
+  <factor>-50</factor>
+  <center>
+   <x-m>0.097</x-m>
+   <y-m>0.0</y-m>
+   <z-m>0.6</z-m>
+  </center>
+  <axis>
+   <x>0.0</x>
+   <y>1.0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>AileronLeft</object-name>
+  <property>surface-positions/left-aileron-pos-norm</property>
+  <factor>30</factor>
+  <axis>
+   <x1-m>3.70</x1-m>
+   <y1-m>-3.30</y1-m>
+   <z1-m>0.43</z1-m>
+   <x2-m>3.70</x2-m>
+   <y2-m>-4.69</y2-m>
+   <z2-m>0.37</z2-m>   
+  </axis>
+ </animation>
+ 
+ <animation>
+  <type>rotate</type>
+  <object-name>AileronRight</object-name>
+  <property>surface-positions/left-aileron-pos-norm</property>
+  <factor>30</factor>
+  <axis>
+   <x1-m>3.70</x1-m>
+   <y1-m>3.30</y1-m>
+   <z1-m>0.43</z1-m>
+   <x2-m>3.70</x2-m>
+   <y2-m>4.69</y2-m>
+   <z2-m>0.37</z2-m>   
+  </axis>
+ </animation> 
+
+ <animation>
+  <type>rotate</type>
+  <object-name>RudderLeft</object-name>
+  <property>surface-positions/rudder-pos-norm</property>
+  <factor>30</factor>
+  <axis>
+   <x1-m>6.7</x1-m>
+   <y1-m>-1.40</y1-m>
+   <z1-m>0.63</z1-m>  
+   <x2-m>6.7</x2-m>
+   <y2-m>-1.40</y2-m>
+   <z2-m>1.85</z2-m>
+   </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>RudderRight</object-name>
+  <property>surface-positions/rudder-pos-norm</property>
+  <factor>30</factor>
+  <axis>
+   <x1-m>6.7</x1-m>
+   <y1-m>1.40</y1-m>
+   <z1-m>0.63</z1-m>  
+   <x2-m>6.7</x2-m>
+   <y2-m>1.40</y2-m>
+   <z2-m>1.85</z2-m>
+   </axis>
+ </animation>
+
+<animation>
+    <type>rotate</type>
+    <object-name>flaps</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor>40.0</factor>
+    <center>
+      <x-m> 3.7</x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.25 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  0.1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+<!--
+
+ <animation>
+  <type>rotate</type>
+  <object-name>Stick</object-name>
+  <property>controls/flight/elevator</property>
+  <factor>-8</factor>
+  <center>
+   <x-m>-4.39</x-m>
+   <y-m>0.00</y-m>
+   <z-m>0.25</z-m>
+  </center>
+  <axis>
+   <x>0.0</x>
+   <y>1.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>Stick</object-name>
+  <property>controls/flight/aileron</property>
+  <factor>-8</factor>
+  <center>
+   <x-m>-4.39</x-m>
+   <y-m>0.00</y-m>
+   <z-m>0.25</z-m>
+  </center>
+  <axis>
+   <x>1.0</x>
+   <y>0.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>Throttle</object-name>
+  <property>controls/engines/engine[0]/throttle</property>
+  <factor>-0.10</factor>
+  <axis>
+   <x>1.0</x>
+   <y>0.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+-->
+<!-- Interior -->
+  <model>
+    <path>Aircraft/F-15E/Models/Interior/interior.xml</path>
+    <offsets>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
+    </offsets>
+  </model>
+
+<!-- Armament  -->
+  <model>
+    <path>Aircraft/F-15E/Models/weapons/loads.xml</path>
+    <offsets>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
+    </offsets>
+  </model> 
+
+ <model>
+    <path>Aircraft/F-15E/Models/Effects/guns/fire.xml</path>
+    <offsets>
+      <x-m> -1.364 </x-m>
+      <y-m> 1.47 </y-m>
+      <z-m> 0.35</z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> 180 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+
+<!--  Smoke and lights -->
+
+<!-- LIGHTS -->
+
+
+<model>
+    <name>Taxi-Light-Left</name>
+    <path>Aircraft/F-15E/Models/lights/light-cone.xml</path>
+    <offsets>
+    <x-m>-3.10</x-m>
+    <y-m>  0.000</y-m> 
+    <z-m> -0.950</z-m>
+    <pitch-deg>   -8.000 </pitch-deg>
+    <heading-deg>  0 </heading-deg>
+    </offsets>
+</model>
+
+<animation>
+    <type>select</type>
+    <object-name>NoseGearLandinglight</object-name>
+    <object-name>Taxi-Light-Left</object-name>
+         
+    <condition>
+      <equals>
+        <property>controls/switches/landing-light</property>
+        <value> 0 </value>
+      </equals>
+    </condition>
+  </animation> 
+
+<model>
+  <path>Aircraft/F-15E/Models/lights/landinglight.xml</path>
+  <name>NoseGearLandinglight</name>     
+  <condition>
+  <equals>
+  <property>gear/gear[0]/position-norm</property>
+  <value type="bool">true</value>
+  </equals>
+  </condition>
+
+<offsets>
+  <x-m>-3.10</x-m>
+  <y-m>  0.000</y-m> 
+  <z-m> -0.950</z-m>      
+</offsets>
+</model>
+
+<model>
+<name>red-colision</name>     
+    <path>Aircraft/F-15E/Models/lights/beacon.xml</path>
+    <offsets>
+      <x-m>0.05</x-m>
+      <y-m> -1.9 </y-m>
+      <z-m> 0.29</z-m>
+
+
+          </offsets>
+  </model> 
+
+
+<model>
+<name>red-colision</name>
+    <path>Aircraft/F-15E/Models/lights/beacon.xml</path>
+    <offsets>
+       <x-m>0.05 </x-m>
+      <y-m> 1.9 </y-m>
+      <z-m> 0.29</z-m>
+
+    </offsets>
+  </model>
+
+  <animation>
+    <type>select</type>
+    <object-name>white-colision</object-name>
+    <object-name>red-colision</object-name>
+         
+    <condition>
+      <equals>
+        <property>controls/switches/col-light</property>
+        <value> 1 </value>
+      </equals>
+    </condition>
+  </animation>
+  
+
+<model>
+<name>formation</name>
+    <path>Aircraft/F-15E/Models/lights/RedLight.xml</path>
+    <offsets>
+      <x-m>  7.43 </x-m>
+      <y-m> 1.4 </y-m>
+      <z-m> 2.5</z-m>
+
+    </offsets>
+  </model>
+  
+  <animation>
+    <type>select</type>
+    <object-name>formation</object-name>
+    
+         
+    <condition>
+      <equals>
+        <property>controls/switches/form-light</property>
+        <value> 1 </value>
+      </equals>
+    </condition>
+  </animation> 
+
+<!-- Nav lghts -->
+  <model>
+  <name>Red-Light</name>
+    <path>Aircraft/F-15E/Models/lights/RedLight.xml</path>
+    <offsets>
+      <x-m>  3.5 </x-m>
+      <y-m> -5.2 </y-m>
+      <z-m> 0.16</z-m>
+
+    </offsets>
+  </model>
+
+
+  <model>
+  <name>Green-Light</name>
+    <path>Aircraft/F-15E/Models/lights/GreenLight.xml</path>
+    <offsets>
+      <x-m>  3.6 </x-m>
+      <y-m> 5.2 </y-m>
+      <z-m> 0.16</z-m>
+
+    </offsets>
+  </model>
+  
+  <animation>
+    <type>select</type>
+    <object-name>Green-Light</object-name>
+    <object-name>Red-Light</object-name>
+         
+    <condition>
+      <equals>
+        <property>controls/switches/nav-light</property>
+        <value> 1 </value>
+      </equals>
+    </condition>
+  </animation>
+  
+  
+  
+
+  <model>
+  <name>white-colision</name>
+    <path>Aircraft/F-15E/Models/lights/StrobeWhite.xml</path>
+    <offsets>
+      <x-m>  3.8 </x-m>
+      <y-m> -5.2 </y-m>
+      <z-m> 0.18</z-m>
+
+    </offsets>
+  </model>
+
+  <model>
+  <name>white-colision</name>
+    <path>Aircraft/F-15E/Models/lights/StrobeWhite.xml</path>
+    <offsets>
+      <x-m>  3.8 </x-m>
+      <y-m> 5.2 </y-m>
+      <z-m> 0.18</z-m>
+
+    </offsets>
+  </model>
+
+<!-- Smoke n Flames -->
+
+<model>
+    <path>Aircraft/F-15E/Models/Effects/ground/ground0.xml</path>
+    <offsets>
+      <x-m> -3.0 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -1.47</z-m>
+    </offsets>
+  </model>
+
+  <!-- Roue gauche -->
+  <model>
+    <path>Aircraft/F-15E/Models/Effects/ground/ground1.xml</path>
+    <offsets>
+      <x-m> 2.0 </x-m>
+      <y-m> -1.1 </y-m>
+      <z-m> -1.4 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Roue droite -->
+  <model>
+    <path>Aircraft/F-15E/Models/Effects/ground/ground2.xml</path>
+    <offsets>
+      <x-m> 2.0 </x-m>
+      <y-m>  1.1 </y-m>
+      <z-m> -1.4 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Poussière -->
+  <!-- Gauche -->
+  <model>
+    <path>Aircraft/F-15E/Models/Effects/smoke/smokeL.xml</path>
+    <offsets>
+      <x-m>  7.7 </x-m>
+      <y-m>  -0.65</y-m>
+      <z-m> -0.1</z-m>
+
+    </offsets>
+  </model>
+
+  <!-- Droite -->
+  <model>
+    <path>Aircraft/F-15E/Models/Effects/smoke/smokeR.xml</path>
+    <offsets>
+      <x-m>  7.7</x-m>
+      <y-m>  0.55</y-m>
+      <z-m> -0.1</z-m>
+
+
+    </offsets>
+  </model>
+
+  <!-- Les flammes -->
+  <!-- Gauche -->
+  <model>
+    <path>Aircraft/F-15E/Models/Effects/flammes/flammesG.xml</path>
+    <offsets>
+      <x-m>  6.3</x-m>
+      <y-m>  -0.64</y-m>
+      <z-m> -0.12</z-m>
+
+    </offsets>
+  </model>
+
+ <!-- Droite -->
+  <model>
+    <path>Aircraft/F-15E/Models/Effects/flammes/flammesD.xml</path>
+    <offsets>
+      <x-m>  6.3</x-m>
+      <y-m>  0.55</y-m>
+      <z-m> -0.12</z-m>
+
+    </offsets>
+  </model>
+
+  <!-- Gauche -->
+  <model>
+    <path>Aircraft/F-15E/Models/Effects/tiptrail/tiptrail.xml</path>
+    <offsets>
+      <x-m>  3.6 </x-m>
+      <y-m> -5.2 </y-m>
+      <z-m> 0.2</z-m>
+
+    </offsets>
+  </model>
+
+  <!-- Droite -->
+  <model>
+    <path>Aircraft/F-15E/Models/Effects/tiptrail/tiptrail.xml</path>
+    <offsets>
+      <x-m>  3.6 </x-m>
+      <y-m> 5.2 </y-m>
+      <z-m> 0.2</z-m>
+
+    </offsets>
+  </model>
+
+  <!-- Gauche -->
+  <model>
+    <path>Aircraft/F-15E/Models/Effects/trail/trailL.xml</path>
+    <offsets>
+      <x-m>  7.7 </x-m>
+      <y-m>  -0.65</y-m>
+      <z-m> -0.1</z-m>
+
+
+
+    </offsets>
+  </model>
+
+  <!-- Droite -->
+  <model>
+    <path>Aircraft/F-15E/Models/Effects/trail/trailR.xml</path>
+    <offsets>
+     <x-m>  7.7</x-m>
+      <y-m>  0.55</y-m>
+      <z-m> -0.1</z-m>
+
+
+
+    </offsets>
+  </model>
+
+<!-- Low level wash -->
+
+ <model>
+	 <name>aircraft_wash_l</name>
+	 <path>Aircraft/F-15E/Models/Effects/aircraft_wash.xml</path>
+	 <condition>
+		 <equals>
+			 <property>controls/state/low_level</property>
+			 <value>1</value>
+		 </equals>
+	 </condition>
+	 <offsets>
+		 <x-m>25.000</x-m>
+		 <y-m>4.50</y-m>
+		 <z-m>0.0</z-m>
+		 <pitch-deg>0</pitch-deg>
+	 </offsets>
+ </model>
+
+<model>
+	 <name>aircraft_wash_r</name>
+	 <path>Aircraft/F-15E/Models/Effects/aircraft_wash.xml</path>
+	 <condition>
+		 <equals>
+			 <property>controls/state/low_level</property>
+			 <value>1</value>
+		 </equals>
+	 </condition>
+	 <offsets>
+		 <x-m>25.000</x-m>
+		 <y-m>-4.50</y-m>
+		 <z-m>0.0</z-m>
+		 <pitch-deg>0</pitch-deg>
+	 </offsets>
+ </model>
+  
+  <animation>
+	 <type>translate</type>
+	 <object-name>aircraft_wash_l</object-name>
+	 <object-name>aircraft_wash_r</object-name>
+	 <property>position/altitude-agl-ft</property>
+	 <condition>
+		 <equals>
+			 <property>controls/state/low_level</property>
+			 <value>1</value>
+		 </equals>
+	 </condition>
+	 <interpolation>
+		 <entry>
+			 <ind>0.0</ind>
+			 <dep>0.0</dep>
+		 </entry>
+		 <entry>
+			 <ind>300.0</ind>
+			 <dep>-90</dep>
+		 </entry>
+	 </interpolation>
+	 
+	 <axis>
+		 <x>-1</x>
+		 <y>0</y>
+		 <z>1.0</z>
+	 </axis>
+	 
+ </animation>
+
+ <!-- ******************************************************************* -->
+<!-- FX                                                                  -->
+<!-- ******************************************************************* -->
+	<model>
+		<path>Aircraft/F-15E/Models/fx.xml</path>
+		<offsets>
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>0.28</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model> 
+	
+	<model>
+		<path>Aircraft/F-15E/Models/Effects/Vapour/Vapour.xml</path>
+		<offsets>
+			<x-m>-2.0</x-m>
+			<y-m>-1.0</y-m>
+			<z-m>0.9</z-m>
+			<roll-deg>0</roll-deg>
+			<pitch-deg>0</pitch-deg>
+			<heading-deg>-25</heading-deg>
+		</offsets>
+	</model>
+	
+	<model>
+		<path>Aircraft/F-15E/Models/Effects/Vapour/Vapour.xml</path>
+		<offsets>
+			<x-m>-2.0</x-m>
+			<y-m>1.0</y-m>
+			<z-m>0.9</z-m>
+			<roll-deg>0</roll-deg>
+			<pitch-deg>0</pitch-deg>
+			<heading-deg>25</heading-deg>
+		</offsets>
+	</model>
+ 
+ <model>
+		<path>Aircraft/F-15E/Models/Effects/Vapour/Vapour2.xml</path>
+		<offsets>
+			<x-m>2.0</x-m>
+			<y-m>-3</y-m>
+			<z-m>0.9</z-m>
+			<roll-deg>0</roll-deg>
+			<pitch-deg>0</pitch-deg>
+			<heading-deg>45</heading-deg>
+		</offsets>
+	</model>
+	
+	<model>
+		<path>Aircraft/F-15E/Models/Effects/Vapour/Vapour2.xml</path>
+		<offsets>
+			<x-m>2.0</x-m>
+			<y-m>3</y-m>
+			<z-m>0.9</z-m>
+			<roll-deg>0</roll-deg>
+			<pitch-deg>0</pitch-deg>
+			<heading-deg>-45</heading-deg>
+		</offsets>
+	</model>
+</PropertyList>

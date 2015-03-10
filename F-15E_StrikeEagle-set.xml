@@ -1,0 +1,743 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <sim>
+
+  <description>F-15E_Strike_Eagle</description>
+  <author>Flying Toaster 3DM, StuartC, Flug</author>
+  <status>Alpha 2.7</status>
+ 
+  <flight-model>yasim</flight-model>
+  <aero>F-15E-yasim</aero>
+<fuel-fraction>1.0</fuel-fraction>
+  <startup>
+   <splash-texture>Aircraft/F-15E/splash.png</splash-texture>
+  </startup>
+  
+  <sound>
+   <path>Aircraft/F-15E/Sounds/sound.xml</path>
+  </sound>
+
+  <model>
+   <path>Aircraft/F-15E/Models/F-15E_StrikeEagle.xml</path>
+  </model>
+
+  <submodels> 
+      <serviceable type="bool">true</serviceable>
+      <path>Aircraft/F-15E/Models/Effects/guns/submodels.xml</path>
+      <path>Aircraft/F-15E/Models/weapons/loads.xml</path>
+  </submodels>
+
+
+  <panel>
+   <visibility archive="y">false</visibility>
+  </panel>
+
+  <hud>
+   <path n="1">Aircraft/F-15E/Hud/hud.xml</path>
+   <visibility n="1">true</visibility>
+   <palette>
+    <color n="0">
+     <alpha type="float">0.85</alpha>
+     <antialiased type="bool">true</antialiased>
+     <brightness type="float">0.85</brightness>
+     <transparent type="bool">true</transparent>
+     <red type="float">0.38</red>
+     <green type="float">1.0</green>
+     <blue type="float">0.22</blue>
+    </color>
+    <color n="1">
+     <alpha type="float">0.85</alpha>
+     <antialiased type="bool">true</antialiased>
+     <brightness type="float">0.85</brightness>
+     <transparent type="bool">true</transparent>
+     <red type="float">1.0</red>
+     <green type="float">0.2</green>
+     <blue type="float">0.0</blue>
+    </color>
+   </palette>
+   <clipping>
+            <left type="double">-128</left>
+            <right type="double">138</right>
+            <top type="double">99</top>
+            <bottom type="double">-130</bottom>
+         </clipping>
+  </hud>
+  
+  <view n="0">
+   <internal archive="y">true</internal>
+   <config>
+     <x-offset-m archive="y">-0.06</x-offset-m> <!-- -0.28-->
+     <y-offset-m archive="y">1.0</y-offset-m>   <!-- 0.51-->
+     <z-offset-m archive="y">-4.0</z-offset-m>   <!-- 2.62-->
+     <pitch-offset-deg>0</pitch-offset-deg>
+ <default-field-of-view-deg>75.3</default-field-of-view-deg>
+
+   </config>
+  </view>
+
+<view n="100">
+<name>Co-Pilot</name>
+<internal archive="y">true</internal>
+<type>lookfrom</type>
+<config>
+<from-model type="bool">true</from-model>
+<from-model-idx type="int">0</from-model-idx>
+<x-offset-m archive="y">-0.06</x-offset-m> <!-- -0.28-->
+<y-offset-m archive="y">1.0</y-offset-m>   <!-- 0.51-->
+<z-offset-m archive="y">-2.7</z-offset-m>   <!-- 2.62-->
+<pitch-offset-deg>0</pitch-offset-deg>
+ <default-field-of-view-deg>75.3</default-field-of-view-deg>
+</config>
+</view>
+
+
+
+
+
+  <chase-distance-m>-25</chase-distance-m>
+
+  <!-- turns off GA tower communications -->
+  <ATC>
+   <enabled type="bool">false</enabled>
+  </ATC>
+
+  <!-- turns off GA traffic -->
+  <ai-traffic>
+   <enabled type="bool">false</enabled>
+  </ai-traffic>
+
+<systems>
+      <electrical>
+        <path>Aircraft/Generic/generic-electrical.xml</path>
+      </electrical>
+      <autopilot>
+        <path>Aircraft/F-15E/System/autopilot5.xml</path>
+      </autopilot>
+  <refuel>
+  <type>boom</type>
+  <serviceable type="bool">true</serviceable>
+ </refuel>
+    
+    </systems>
+<mp-systems>
+					<radar-enabled type="bool">true</radar-enabled>
+					<ecm-rwr-enabled type="bool">true</ecm-rwr-enabled>
+					<combat-enabled type="bool">true</combat-enabled>
+				</mp-systems>
+
+
+<weight n="0">
+<name>pylon1.L</name>
+<weight-lb>0</weight-lb>
+<selected>none</selected>
+<opt>
+<name>none</name>
+<lbs>0</lbs>
+</opt>
+<opt>
+<name>AIM-9 Sidewinder</name>
+<lbs>190.0</lbs>
+</opt>
+
+</weight>
+
+<weight n="1">
+<name>pylon2.L</name>
+<tank>4</tank>
+<weight-lb>0</weight-lb>
+<selected>none</selected>
+<opt>
+<name>none</name>
+<lbs>0</lbs>
+</opt> 
+<opt>
+<name>2000 l Droptank</name>
+<lbs>2271.0</lbs>
+<gals>600</gals>
+</opt>
+</weight>
+
+<weight n="2">
+<name>pylon3.L</name>
+<weight-lb>0</weight-lb>
+<selected>none</selected>
+<opt>
+<name>none</name>
+<lbs>0</lbs>
+</opt>
+<opt>
+<name>AIM-9 Sidewinder</name>
+<lbs>190.0</lbs>
+</opt>
+
+</weight>
+
+<weight n="3">
+<name>pylon4.L</name>
+<weight-lb>0</weight-lb>
+<selected>none</selected>
+<opt>
+<name>none</name>
+<lbs>0</lbs>
+</opt>
+<opt>
+<name>MK-82</name>
+<lbs>500.0</lbs>
+</opt>
+<opt>
+<name>GBU-12</name>
+<lbs>800.0</lbs>
+</opt>
+
+</weight>
+
+<weight n="4">
+<name>pylon5.L</name>
+<weight-lb>0</weight-lb>
+<selected>none</selected>
+<opt>
+<name>none</name>
+<lbs>0</lbs>
+</opt>
+<opt>
+<name>MK-82</name>
+<lbs>500.0</lbs>
+</opt>
+</weight>
+
+<weight n="5">
+<name>pylon6.L</name>
+<weight-lb>0</weight-lb>
+<selected>none</selected>
+<opt>
+<name>none</name>
+<lbs>0</lbs>
+</opt>
+<opt>
+<name>MK-82</name>
+<lbs>500.0</lbs>
+</opt>
+<opt>
+<name>GBU-12</name>
+<lbs>800.0</lbs>
+</opt>
+</weight>
+
+<weight n="6">
+<name>pylon7.L</name>
+<weight-lb>0</weight-lb>
+<selected>none</selected>
+<opt>
+<name>none</name>
+<lbs>0</lbs>
+</opt>
+<opt>
+<name>2xAIM120</name>
+<lbs>670.0</lbs>
+</opt>
+<opt>
+<name>GBU-12</name>
+<lbs>800.0</lbs>
+</opt>
+<opt>
+<name>2xGBU-12</name>
+<lbs>1600.0</lbs>
+</opt>
+<opt>
+<name>GBU-24</name>
+<lbs>2350.0</lbs>
+</opt>
+
+</weight>
+
+<weight n="7">
+<name>pylon8.L</name>
+<weight-lb>0</weight-lb>
+<selected>none</selected>
+<opt>
+<name>none</name>
+<lbs>0</lbs>
+</opt>
+<opt>
+<name>LANTIRN_Targeting_ Pod</name>
+<lbs>397.0</lbs>
+</opt>
+
+</weight>
+
+
+<weight n="8">
+<name>pylon.C</name>
+<tank>5</tank>
+<weight-lb>0</weight-lb>
+<selected>none</selected>
+<opt>
+<name>none</name>
+<lbs>0</lbs>
+</opt>
+<opt>
+<name>2000 l Droptank</name>
+<lbs>2271.0</lbs>
+<gals>600</gals>
+</opt>
+<opt>
+<name>an-zsw-1_DLP</name>
+<lbs>1323.0</lbs>
+</opt>
+</weight>
+
+<weight n="9">
+<name>pylon8.R</name>
+<weight-lb>0</weight-lb>
+<selected>none</selected>
+<opt>
+<name>none</name>
+<lbs>0</lbs>
+</opt>
+<opt>
+<name>LANTIRN_Navigation_ Pod</name>
+<lbs>450.0</lbs>
+</opt>
+
+</weight>
+
+<weight n="10">
+<name>pylon7.R</name>
+<weight-lb>0</weight-lb>
+<selected>none</selected>
+<opt>
+<name>none</name>
+<lbs>0</lbs>
+</opt>
+<opt>
+<name>2xAIM120</name>
+<lbs>670.0</lbs>
+</opt>
+<opt>
+<name>GBU-12</name>
+<lbs>800.0</lbs>
+</opt>
+<opt>
+<name>2xGBU-12</name>
+<lbs>1600.0</lbs>
+</opt>
+<opt>
+<name>GBU-24</name>
+<lbs>2350.0</lbs>
+</opt>
+
+</weight>
+
+<weight n="11">
+<name>pylon6.R</name>
+<weight-lb>0</weight-lb>
+<selected>none</selected>
+<opt>
+<name>none</name>
+<lbs>0</lbs>
+</opt>
+<opt>
+<name>MK-82</name>
+<lbs>500.0</lbs>
+</opt>
+<opt>
+<name>GBU-12</name>
+<lbs>800.0</lbs>
+</opt>
+</weight>
+
+<weight n="12">
+<name>pylon5.R</name>
+<weight-lb>0</weight-lb>
+<selected>none</selected>
+<opt>
+<name>none</name>
+<lbs>0</lbs>
+</opt>
+<opt>
+<name>MK-82</name>
+<lbs>500.0</lbs>
+</opt>
+</weight>
+
+<weight n="13">
+<name>pylon4.R</name>
+<weight-lb>0</weight-lb>
+<selected>none</selected>
+<opt>
+<name>none</name>
+<lbs>0</lbs>
+</opt>
+<opt>
+<name>MK-82</name>
+<lbs>500.0</lbs>
+</opt>
+<opt>
+<name>GBU-12</name>
+<lbs>800.0</lbs>
+</opt>
+
+</weight>
+
+<weight n="14">
+<name>pylon3.R</name>
+<weight-lb>0</weight-lb>
+<selected>none</selected>
+<opt>
+<name>none</name>
+<lbs>0</lbs>
+</opt>
+<opt>
+<name>AIM-9 Sidewinder</name>
+<lbs>190.0</lbs>
+</opt>
+
+</weight>
+
+<weight n="15">
+<name>pylon2.R</name>
+<tank>6</tank>
+<weight-lb>0</weight-lb>
+<selected>none</selected>
+<opt>
+<name>none</name>
+<lbs>0</lbs>
+</opt>
+<opt>
+<name>2000 l Droptank</name>
+<lbs>2271.0</lbs>
+<gals>600</gals>
+</opt>
+</weight>
+
+<weight n="16">
+<name>pylon1.R</name>
+<weight-lb>0</weight-lb>
+<selected>none</selected>
+<opt>
+<name>none</name>
+<lbs>0</lbs>
+</opt>
+<opt>
+        <name>AIM-9 Sidewinder</name>
+        <lbs>190.0</lbs>
+      </opt>
+
+</weight>
+
+<help>
+      <title>F-15E</title>
+      <key>
+        <name>d</name>
+        <desc>Open/Close canopy</desc>
+      </key>
+      <key>
+        <name>e</name>
+        <desc>Guns fire</desc>
+      </key>
+      <key>
+        <name>8</name>
+        <desc>Fire Aim9 Sidewinder (unguided)</desc>
+      </key>
+      <key>
+        <name>9</name>
+        <desc>Drop MK 82 500lb bomb</desc>
+      </key>
+      
+      <line>Check Equipment/Fuel and Payload menu often or you will out of fuel soon.</line>
+      <line>Equipment on that menu loads out, is realistic, and does affect</line>
+      <line>aircraft handling. However it is not linked to the actual weapons</line>
+      <line>firing routines, which for now are unrealistic.</line>
+      <line>You have an unlimited number of gun rounds, MK 82 bombs, and AIM9</line>
+      <line>sidewinder missiles, which you can fire with e, 8, and 9 keys or</line>
+      <line>trigger 1 (gun) and trigger 2 (sidewinder).</line>
+      <line>All external lights now operate from the,</line>
+      <line>master lighting panel on the right. Default is all lights are off.</line>
+      <line></line>
+    </help>
+
+<!--
+<menubar include="Dialogs/F-15-menu.xml"/>
+-->
+</sim>
+
+
+<systems>
+      <electrical>
+        <path>Aircraft/Generic/generic-electrical.xml</path>
+      </electrical>
+      <autopilot>
+        <path>Aircraft/F-15E/System/autopilot5.xml</path>
+      </autopilot>
+  <refuel>
+  <type>boom</type>
+  <serviceable type="bool">true</serviceable>
+ </refuel>
+    
+    </systems> 
+
+
+<!-- set up control properties for YASim -->
+  <controls>
+    <armament>
+      <station n="0">
+        <release type="bool">false</release>
+      </station>
+      <station n="1">
+        <release type="bool">false</release>
+      </station>
+      <station n="2">
+        <release type="bool">false</release>
+      </station>
+      <station n="3">
+        <release type="bool">false</release>
+      </station>
+      <station n="4">
+        <release type="bool">false</release>
+      </station>
+      <station n="5">
+        <release type="bool">false</release>
+      </station>
+      <station n="6">
+        <release type="bool">false</release>
+      </station>
+    <station n="7">
+        <release type="bool">false</release>
+      </station>
+    <station n="8">
+        <release type="bool">false</release>
+      </station>
+    <station n="9">
+        <release type="bool">false</release>
+      </station>
+    <station n="10">
+        <release type="bool">false</release>
+      </station>
+    <station n="11">
+        <release type="bool">false</release>
+      </station>
+    <station n="12">
+        <release type="bool">false</release>
+      </station>
+    <station n="13">
+        <release type="bool">false</release>
+      </station>
+    <station n="14">
+        <release type="bool">false</release>
+      </station>
+    <station n="15">
+        <release type="bool">false</release>
+      </station>
+    <station n="16">
+        <release type="bool">false</release>
+      </station>
+    </armament>
+<gear>
+      <brake-parking type="double">1.0</brake-parking>
+    </gear>
+  </controls>
+
+  <environment>
+    <turbulence>
+      <use-cloud-turbulence>true</use-cloud-turbulence>
+    </turbulence>
+  </environment>
+<input>
+    <keyboard include="Nasal/keyboard.xml"/>
+</input>
+
+
+<consumables>
+    <fuel>
+      <tank n="0">
+        <tank-num type="int">0</tank-num>
+        <level-gal_us archive="y">6562</level-gal_us>
+      </tank>
+      <tank n="1">
+        <tank-num type="int">1</tank-num>
+        <level-gal_us archive="y">6562</level-gal_us>
+      </tank>
+      <tank n="2">
+        <tank-num type="int">2</tank-num>
+        <level-gal_us archive="y">10822</level-gal_us>
+      </tank>
+      <tank n="3">
+        <tank-num type="int">3</tank-num>
+        <level-gal_us archive="y">10822</level-gal_us>
+      </tank>
+      <tank n="4">
+        <name>Left-tank</name>
+        <selected type="bool">false</selected>
+      </tank>
+      <tank n="5">
+        <name>Centre-Tank</name>
+        <selected type="bool">false</selected>
+      </tank>
+      <tank n="6">
+        <name>Right-Tank</name>
+        <selected type="bool">false</selected>
+      </tank>
+    </fuel>
+  </consumables>
+
+<!-- Autopilot 
+  <autopilot>
+    <settings>
+     
+      <target-altitude-ft type="float">3000</target-altitude-ft>
+      <target-pitch-deg type="float">0</target-pitch-deg>
+      <target-aoa-deg type="float">0</target-aoa-deg>
+      <target-roll-deg type="float">0</target-roll-deg>
+      <target-climb-rate-fps type="float">0</target-climb-rate-fps>
+      <ground-roll-heading-deg type="float">-999.9</ground-roll-heading-deg>
+      <target-speed-kt type="float">350.0</target-speed-kt>
+      <target-mach type="float">0.86</target-mach>
+      <approach-aoa-deg type="float">12.0</approach-aoa-deg>
+      <rotate-speed-kt type="float">110.0</rotate-speed-kt>
+      <rotate-deg type="float">13.0</rotate-deg>
+    </settings>
+
+  <locks>
+      <pitch type="string">initialised</pitch>
+      <roll type="string">initialised</roll>
+      <altitude type="string">initialised</altitude>
+      <heading type="string">initialised</heading>
+      <auto-takeoff type="string">enabled</auto-takeoff>
+      <auto-landing type="string">enabled</auto-landing>
+      <rudder type="string">initialised</rudder>
+      <aoa type="string">initialised</aoa>
+    </locks> 
+    
+  </autopilot> -->
+
+
+
+<engines>
+
+<engine n="0">
+<running>true</running>
+   <rpm>1000</rpm>
+  </engine>
+
+  <engine n="1">
+   <running>true</running>
+   <rpm>1000</rpm>
+  </engine>
+
+</engines>
+
+ <instrumentation>
+
+ 
+ 
+ 
+<rwr>
+<display-lighting-intens type="double">0.4</display-lighting-intens>
+<symbology-lighting-intens type="double">1</symbology-lighting-intens>
+</rwr>
+
+<enav><selected type="int">3</selected></enav>
+<radar>
+      <range type="int" archive="y">20</range>
+      <range-factor type="double" archive="n">0.001888</range-factor>
+      <minimized type="bool" archive="y">false</minimized>
+      <selected type="int">3</selected>
+
+
+      <!-- inicio en pruebas -->
+	<enabled type="bool">true</enabled>
+	<az-field type="double">120</az-field>
+	<range type="double">150</range>
+	<range-selected type="double">50</range-selected>
+	<radar2-range type="double">150</radar2-range>
+	<display-rdr type="bool">true</display-rdr>
+	<radar-standby type="int">3</radar-standby>
+	<mode>
+	    <rws type="bool">true</rws>
+	    <tws-auto type="bool">false</tws-auto>
+	</mode>
+
+ </radar> 
+
+    <terrain-radar>
+      <hi-elev>
+        <alt-ft type="double">-9999.9</alt-ft>
+        <lat-deg type="double">-9999.9</lat-deg>
+        <lon-deg type="double">-9999.9</lon-deg>
+        <dist-m type="double">-9999.9</dist-m>
+        <collision-status type="string">initialised</collision-status>
+      </hi-elev>
+      <settings>
+        <mode type="string">extend</mode>
+        <state type="string">off</state>
+        <range-m type="double">2500</range-m>
+        <step-m type="double">250</step-m>
+        <max-climb-rate-fps type="double">120</max-climb-rate-fps>
+        <hi-elev-markers type="bool">false</hi-elev-markers>
+      </settings>
+    </terrain-radar>
+  </instrumentation>
+
+<nasal>
+<doors>
+<file>Aircraft/F-15E/Nasal/doors.nas</file>
+</doors>
+
+<F-15E>
+<file>Aircraft/F-15E/Nasal/light.nas</file>
+<file>Aircraft/F-15E/Nasal/doors.nas</file>
+<file>Aircraft/F-15E/Nasal/startup.nas</file>
+<file>Aircraft/F-15E/Nasal/dropview.nas</file>
+<file>Aircraft/F-15E/Nasal/trajectory-markers.nas</file>
+<file>Aircraft/F-15E/Nasal/auto-takeoff.nas</file>
+<file>Aircraft/F-15E/Nasal/auto-landing.nas</file>
+<file>Aircraft/F-15E/Nasal/altitude-hold-monitor.nas</file>
+<file>Aircraft/F-15E/Nasal/heading-hold-monitor.nas</file>
+<file>Aircraft/F-15E/Nasal/yaw-monitor.nas</file>
+<file>Aircraft/F-15E/Nasal/tfa.nas</file>
+
+
+<!-- <file>Aircraft/F-15E/Nasal/liveries.nas</file> -->
+
+</F-15E>
+
+<low>
+<file>Aircraft/F-15E/Nasal/low.nas</file>
+</low>
+<guns>
+      <file>Aircraft/F-15E/Nasal/weapons.nas</file>
+      <file>Aircraft/F-15E/Nasal/revi.nas</file>
+    </guns>
+
+<aar> 
+<file>Aircraft/Generic/aar.nas</file>
+</aar>
+<rwr>
+ <file>Aircraft/F-15E/Models/Interior/Panel/Instruments/rwr/rwr.nas</file>
+</rwr> 
+<radardist>
+<file>Aircraft/Instruments-3d/radardist/radardist.nas</file>
+</radardist>
+<enav>
+<file>Aircraft/F-15E/Nasal/enav.nas</file>
+</enav>
+<radar>
+<file>Aircraft/F-15E/Models/Interior/Panel/Instruments/mfd/radar.nas</file> 
+    </radar>
+<radar2>
+<file>Aircraft/F-15E/Models/Interior/Panel/Instruments/mfd/radar2.nas</file>
+</radar2>
+  <tfs>
+		<file>Aircraft/F-15E/Nasal/tfs.nas</file>
+  </tfs>
+  <mfd>
+  <file>Aircraft/F-15E/Nasal/mfd.nas</file>
+ </mfd>
+
+</nasal>
+
+
+</PropertyList>
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>an-zsw-1.ac</path>
+
+  <animation>
+    <object-name>an-zsw-1</object-name>
+  </animation>
+  <attach>world</attach>
+
+  <placer>
+   <type>point</type>
+  </placer>
+</PropertyList>
